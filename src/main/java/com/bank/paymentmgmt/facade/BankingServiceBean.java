@@ -15,10 +15,22 @@ import javax.ejb.Stateless;
 
 public class BankingServiceBean implements BankingServiceEndpointInterface{
 
-    // Add business logic below. (Right-click in editor and choose
-    // "Insert Code > Add Business Method")
     @Override
     public Boolean createPayment(String ccNumber, Double amount) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        //To change body of generated methods, choose Tools | Templates.
+        
+        if(ccNumber.length()== 10 ){
+            System.out.println("Montant payé : "+amount +" €");
+            return true;
+        } else {
+            return false;
+        }
+    
+    
+    
     }
+
+    // Add business logic below. (Right-click in editor and choose
+    // "Insert Code > Add Business Method")
+    
 }
