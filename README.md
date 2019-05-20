@@ -1,11 +1,3 @@
-
-# bankFacade-ejb
-Création de services Web SOAP et d’un client de services web
-
-
-
-![image](https://user-images.githubusercontent.com/19567048/58032055-156bc680-7b22-11e9-8715-e141c2b077d6.png)
-
 ## bankFacade-ejb
 
 Création de services Web SOAP et d’un client de services web
