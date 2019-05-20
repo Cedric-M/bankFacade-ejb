@@ -13,8 +13,12 @@ import javax.ejb.Stateless;
  */
 @Stateless
 
-public class BankingServiceBean {
+public class BankingServiceBean implements BankingServiceEndpointInterface{
 
     // Add business logic below. (Right-click in editor and choose
     // "Insert Code > Add Business Method")
+    @Override
+    public Boolean createPayment(String ccNumber, Double amount) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 }
