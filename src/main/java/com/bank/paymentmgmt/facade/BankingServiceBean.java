@@ -15,8 +15,8 @@ import javax.jws.WebService;
 @Stateless
 @WebService(
     endpointInterface = "com.bank.paymentmgmt.facade.BankingServiceEndpointInterface",
-    portName = "BankingPort",       //optional
-    serviceName = "BankingService"  //optional
+    portName = "BankingPort",       //optional: nom du <wsdl:port>.
+    serviceName = "BankingService"  //optional: nom du <wsdl :service>
 )
 public class BankingServiceBean implements BankingServiceEndpointInterface{
 

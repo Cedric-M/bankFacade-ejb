@@ -14,7 +14,7 @@ import javax.jws.WebService;
  *
  * @author ced
  */
-@WebService(name = "BankingEndpoint")
+@WebService(name = "BankingEndpoint")     //nom de l’élément XML <wsdl:portype>
 public interface BankingServiceEndpointInterface {
     
     @WebMethod(operationName = "paymentOperation")
