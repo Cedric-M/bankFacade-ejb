@@ -6,13 +6,18 @@
 package com.bank.paymentmgmt.facade;
 
 import javax.ejb.Stateless;
+import javax.jws.WebService;
 
 /**
  *
  * @author ced
  */
 @Stateless
-
+@WebService(
+    endpointInterface = "com.bank.paymentmgmt.facade.BankingServiceEndpointInterface",
+    portName = "BankingPort",       //optional
+    serviceName = "BankingService"  //optional
+)
 public class BankingServiceBean implements BankingServiceEndpointInterface{
 
     @Override
