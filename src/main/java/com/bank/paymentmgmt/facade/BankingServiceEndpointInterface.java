@@ -5,10 +5,17 @@
  */
 package com.bank.paymentmgmt.facade;
 
+import javax.jws.WebMethod;
+import javax.jws.WebResult;
+import javax.jws.WebService;
+
 /**
  *
  * @author ced
  */
+@WebService(name = "BankingEndpoint")
 public interface BankingServiceEndpointInterface {
-    Boolean createPayment(String ccNumber, Double amount) ;
+    @WebMethod(operationName = "paymentOperation")
+    @WebResult(name = "acceptedPayment")
+    Boolean createPayment(@WebParam(name = "cardNumber")String ccNumber, @WebParam(name = "amountPaid")Double amount) ;
 }

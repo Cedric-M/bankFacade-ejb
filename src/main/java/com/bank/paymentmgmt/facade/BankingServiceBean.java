@@ -17,7 +17,6 @@ public class BankingServiceBean implements BankingServiceEndpointInterface{
 
     @Override
     public Boolean createPayment(String ccNumber, Double amount) {
-        //To change body of generated methods, choose Tools | Templates.
         
         if(ccNumber.length()== 10 ){
             System.out.println("Montant payé : "+amount +" €");
@@ -25,9 +24,6 @@ public class BankingServiceBean implements BankingServiceEndpointInterface{
         } else {
             return false;
         }
-    
-    
-    
     }
 
     // Add business logic below. (Right-click in editor and choose
