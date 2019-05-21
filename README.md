@@ -1,6 +1,8 @@
 ## bankFacade-ejb
 
-Création de services Web SOAP et d’un client de services web
+Creation of a SOAP web service with the JAX-WS standard 
+
+Common objective along with webStore: Creating SOAP Web Services and a Web Services Client
 
 ## Preview
 
