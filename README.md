@@ -6,7 +6,11 @@ Création de services Web SOAP et d’un client de services web
 
 BankingService Web Service Tester:
 
-![image](https://user-images.githubusercontent.com/19567048/58032055-156bc680-7b22-11e9-8715-e141c2b077d6.png)
+![image](https://user-images.githubusercontent.com/19567048/58082552-84472f00-7bb7-11e9-9fc3-584c0864c370.png)
+
+Netbeans output:
+
+![image](https://user-images.githubusercontent.com/19567048/58082599-9e810d00-7bb7-11e9-87f8-89e1b1c1a020.png)
 
 
 
