@@ -21,7 +21,7 @@ import javax.jws.WebService;
     portName = "BankingPort",       //optional: nom du <wsdl:port>.
     serviceName = "BankingService"  //optional: nom du <wsdl :service>
 )
-public class BankingServiceBean implements BankingServiceEndpointInterface{
+public class BankingServiceBean implements BankingServiceEndpointInterface, BankingServiceRemote{
     
     @Inject
     private PaymentDAO paymentDAO;
