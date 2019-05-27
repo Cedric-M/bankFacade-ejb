@@ -44,6 +44,18 @@
                 <version>2.3</version>
                 <configuration>
                     <ejbVersion>3.2</ejbVersion>
+                    <!--génération d'un jar contenant la vue cliente -->
+                    <generateClient>true</generateClient>
+                    <clientExcludes>
+                        <!--exclusion de l'implémentation-->
+                        <clientExclude>
+                            com/bank/paymentmgmt/facade/BankingServiceBean.class
+                        </clientExclude>
+                        <!--exclusion du DAO-->
+                        <clientExclude>
+                            com/bank/paymentmgmt/**/integration/
+                        </clientExclude>
+                    </clientExcludes>
                 </configuration>
             </plugin>
             <plugin>
